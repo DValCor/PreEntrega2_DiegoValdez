@@ -74,7 +74,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+//PROMPT SIMPLE CON ALERT
+//***********************************************************************************************************************
 
+let botonIngresaNombre = document.getElementById('botonIngresaNombre');
+
+botonIngresaNombre.addEventListener('click', solicitarNombre);
+
+function solicitarNombre(){
+    let nombre = prompt("Ingresá tu nombre acá");
+
+    if (nombre) {
+        alert("Hola, "+ nombre + " ¿cómo estás?.");
+    } else {
+        alert("Todavía no ingresaste tu nombre :)");
+    }
+};
+
+//TRABAJANDO CON EL DOM
 //***********************************************************************************************************************
 
 //Buscador de productos
@@ -176,3 +193,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
