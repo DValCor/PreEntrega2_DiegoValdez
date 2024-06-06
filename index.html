@@ -1,0 +1,58 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="container1">
+            <h1>Buscá tus productos</h1>
+            <input type="search" class="inputBuscar" placeholder="Buscá tu próximo producto" aria-label="Buscar">
+            <button type="button" class="botonBuscar">Buscar</button>
+            <div class="resultados"></div>
+        </section>
+        <section class="container2">
+            <h1>Agrega productos a tu carrito</h1>
+            <div class="products">
+                <div class="product">
+                    <h2>Sound Pro Run</h2>
+                    <p>Precio: $100</p>
+                    <input type="button" class="botonComprar" value="Agregar al carrito">
+                </div>
+                <div class="product">
+                    <h2>Sound Pro Walk</h2>
+                    <p>Precio: $200</p>
+                    <input type="button" class="botonComprar" value="Agregar al carrito">
+                </div>
+                <div class="product">
+                    <h2>Music Beats</h2>
+                    <p>Precio: $300</p>
+                    <input type="button" class="botonComprar" value="Agregar al carrito">
+                </div>
+                <div class="product">
+                    <h2>BassMorph</h2>
+                    <p>Precio: $400</p>
+                    <input type="button" class="botonComprar" value="Agregar al carrito">
+                </div>
+                <div class="product">
+                    <h2>SoundSphere</h2>
+                    <p>Precio: $500</p>
+                    <input type="button" class="botonComprar" value="Agregar al carrito">
+                </div>
+                <div class="product">
+                    <h2>SoundSphere</h2>
+                    <p>Precio: $600</p>
+                    <input type="button" class="botonComprar" value="Comprar">
+                </div>
+            </div>
+            <div id="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="carList"></ul>
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>
